@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*
+{
+    font: 1.1em sans-serif;
+    box-sizing: border-box;
+}
+html /* propriété dont les valeurs s'appliquent à la page entière*/
+{ 
+    font-size: 62.5%;
+	background-color:rgba(113, 199, 243, 0.2);
+    margin: 0px;
+}
+header{display: flex;} 
+/*"display:flex" est une propriété qui permet d'afficher les éléments de 
+l'en-tête sous forme :horizontale, donc sur une mêmeligne */
+
+#isipaimg /*propriétés sur le logo de l'isipa*/
+{
+    width: 55px;
+    height: 50px;
+    padding-left: 1em;
+    margin-top: 0.5em;
+    margin-left: 0.3em;
+    float: left;
+}
+.isipa /*le texte ISIPA situé juste à côté du logo de l'isipa */
+{
+    margin-left: 0.6em;
+    margin-top: 0.2em;
+    padding-top: 0.5em;
+    font-size: 2.1em;
+    font-weight: 500;
+}
+.list_one /*modification des propriétés d'affichage de la liste non ordonnée*/
+{
+    list-style-type: none; 
+    margin-left: 11.5em;
+    margin-top: 1.7em;
+}
+li a /*prppriétés applicables à toutes les balises "a" situées à l'intérieur d'une balise "li"*/
+{
+    text-decoration: none; 
+    color:black; 
+    text-align: center; 
+    padding: 12px 12px;
+    font-family :'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Century', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: normal;
+}
+li a:hover{color: blue;}
+.menu{float: left;} 
+/*
+ très important pour le positionnement de la liste entière
+ élément après élément. Si cette ligne est supprimé, les éléments du menu seront
+ affichés en ligne verticale c'est-à-dire élément après élément du haut vers le bas
+*/
+
+#inscription /*Texte "inscription" inscrit dans le bouton d'inscription */
+{
+    text-decoration: none; color: white;
+}
+.first_button /*    le bouton d'inscription */
+{
+    background-color: hsl(221, 100%, 50%); margin-left: 13em; padding: 8px 11px; 
+    height: 3.5em; width: 10.3em ; padding-top: 0.5em; margin-top: 0.7em;
+    border-radius: 8px; margin-right:0; 
+    border: 0;
+}
+h1 /*le texte : "Inscrivez-vous à l'isipa" */
+{
+    font-size: 3.99em; 
+    font-weight: 700; 
+    padding-top: 2.6em; 
+    color: rgb(2, 2, 78);
+}
+h2 /*le texte : "Pour devenir spécialiste dans l'une de nos filières" */
+{
+    font-size: 2.2em;
+    margin-top: 0.2em;
+    font: weight 680px;; 
+    font-family: sans-serif;
+    color: rgb(2, 2, 78);
+    line-height: 0.99em;
+}
+.infor /*Le bouton comportant les sciences informatiques*/
+{
+    background-color: white; 
+    margin-left: 5em; 
+    float: right; 
+    position: absolute;
+    bottom: 2.8em;
+    right: 19.8em;
+    border-style: none;
+    border-radius: 8px;
+    width: 17.4em;
+    height: 5.5em;
+    padding-left: 2.4em;
+    padding-bottom: 5.7em;
+    padding-top: 0.6em;
+}
+.comm /*Le bouton comportant les sciences commerciales et financières*/
+{
+    padding: 10px 14px; 
+    float: right; 
+    background-color: white; 
+    position: absolute;
+    right: 0;
+    height: 5.5em;
+    bottom: 0.5em;
+    border-style: none;
+    border-radius: 8px;
+    padding-top: 0em ;
+    border-radius: 7px;
+    margin-right: 0.2em;
+}
+.second_but /*le texte à l'intérieur des deux boutons */ 
+{
+    color:black; 
+    text-align: left; 
+    font : weight 690px; 
+    font-size: 1.4em; 
+    border-radius: 7px;
+    font-family: 'Century Gothic' sans-serif;
+    line-height: 22px;
+}
+
+#first_desc /*L'image de l'étudiante diplômée*/
+{
+    background-image: url(students.png);
+    background-repeat: no-repeat;
+    margin-top: 0.6em;
+    height: 68em;
+    position: fixed;
+    background-attachment: fixed;
+    background-position: top;
+    background-size: 28.3em;
+    left: 45em;
+    top: 0em;
+    right: 0em;
+}
+.button_video:hover /*L'action du bouton lors du survol de la souris */
+{
+    background-color:skyblue;
+    color:white; 
+    border-radius: 10px;
+    box-shadow: 4px 4px 3px rgba(66, 170, 235, 0.495);
+}
+.link_video /*Le lien hypertexte se trouvant en dessous de la vidéo renvoyant vers YouTube  */
+{
+    text-decoration: none; 
+    color: rgb(14, 65, 233); 
+    font:weight 700px;
+}
+.link_video:hover{color: white;} /*L'action du lien hypertexte dans le bouton lors du survol de la souris */
+#aside_part /* partie à droite de la video */
+{
+   margin-left: 55.1em;
+   margin-top: -27em;
+   height: 60em;
+   width: 35em;
+   
+}
+.aside_title /* Titre de la partie à droite de la video */
+{
+    text-align: center;
+    font: 1.57em sans serif;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(2, 2, 78);
+    line-height: 1.3em;
+}
+.aside_text
+{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.75em;
+    font-size: 1.278em;
+    color: rgb(53, 50, 50);
+}
+.screen_three
+{
+    margin-top: -13em; 
+    font-size: 2.27em; 
+    line-height: 1.3em;
+}
+.list_two
+{
+    line-height: 1.5em;
+    color: rgb(2, 2, 78); 
+    padding-top: 1.5em;
+    padding-left: 4em;
+    list-style-type:circle;
+}
+.cond
+{
+    font-weight: 700; 
+    font-size: 1.37em;
+}
+.form
+{
+    background-color: hsl(221, 100%, 50%); 
+    padding: 15px 20px;
+    border:0.4em;
+    border-radius: 7px;
+    padding-left: 2em;
+    padding-right: 2em;
+    margin-top: 1.4em;
+}
+.form:hover
+{
+    background-color: hwb(202 3% 13%);
+}
+button a
+{
+    text-decoration: none;
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    font-size: 0.98em;
+}
+.apprentissage /*la première image (à gauche) */
+{
+    margin-top: -65em;
+    margin-bottom: 20.1em;
+    margin-left: 1.5em;
+    height: 11.3em;
+    width: 9.6em;
+    padding-bottom: 0.3em;
+}
+.accompagnement /*la deuxième image (à droite de la première) */
+{
+    height: 12em;
+    width: 21.3em;
+    padding-bottom: 1.1em;
+    margin-left: 12.3em;
+}
+.salle /*la troisième image (en bas de deux autres) */
+{
+    height:18em ;
+    width: 32em;
+    margin-left: 1.5em;
+}
+#pictures_bottom /*les trois images en bas */
+{
+   margin-left: 48.3em;
+   margin-top: -31em;
+   height: 60em;
+   width: 35em;
+   position:sticky;
+}
+.screen_four /*la partie en dessous des images (le titre de niveau 2 "Des formations diversifiées)"*/
+{
+    text-align: center;
+    font-size: 2em;
+    padding-top: 1.7em;
+    font-weight: 700;
+}
+.doxel /*le petit texte avant les formations proposées */
+{
+    text-align: center;
+    font-size: 1.2em;
+    font-family: sans-serif;
+    padding-top: 1em;
+    line-height: 1.7em;
+    color: rgb(75, 72, 72);
+}
+#four_screen
+{
+    margin-top: -11em;
+}
+#formation_one
+{
+    height: 20em ;
+    width: 23em;
+    float: left;
+    white-space: 10em;
+    margin-left: 1.3em;
+    margin-right: 1em;
+    background-color:rgba(113, 199, 243, 0.2);
+    border:0;
+    margin-top: 3em;
+}
+.formation_one
+{
+    color: rgb(2, 2, 78);  
+}
+.formation_pOne
+{
+    text-align: center;
+}
+#formation_two
+{
+    height: 20em ;
+    width: 23em;
+    float: left;
+    white-space: 10em;
+    margin-left: 0.6em;
+    background-color:rgba(113, 199, 243, 0.2);
+    margin-top: 3em;
+}
+.formation_two
+{
+    color: rgb(2, 2, 78); 
+}
+.formation_pTwo
+{
+    text-align: center;
+}
+#formation_three
+{
+    height: 20em ;
+    width: 23em;
+    float: right;
+    white-space: 10em;
+    margin-right:1.3em;
+    background-color:rgba(113, 199, 243, 0.1);;
+    border-color:rgba(113, 199, 243, 0.1) ;
+    margin-top: 3em;
+}
+.formation_three
+{
+    color: rgb(2, 2, 78); 
+}
+.formation_pThree
+{
+    text-align: center;
+}
+.more_info{color: blue;}
